@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "api-gateway/src",
+  "monorepo": true,
+  "root": "api-gateway",
+  "projects": {
+    "api-gateway": {
+      "type": "application",
+      "root": "api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "api-gateway/tsconfig.json"
+      }
+    },
+    "grpc-user": {
+      "type": "application",
+      "root": "grpc-user",
+      "entryFile": "main",
+      "sourceRoot": "grpc-user/src",
+      "compilerOptions": {
+        "tsConfigPath": "grpc-user/tsconfig.json"
+      }
+    }
+  }
+} 
