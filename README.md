@@ -54,6 +54,9 @@ npm install
 ### Running the Services
 
 ```bash
+# ts compile proto files
+npm run pbcompile
+
 # Start User Service
 npm run start:user
 
