@@ -5,9 +5,6 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
 # next.js
 /.next/
 /out/
@@ -45,14 +42,6 @@ yarn-error.log*
 
 # vscode
 .vscode/
-
-# prisma
-/prisma/
-DEPLOY_KEY_ADDED
-HOST_KEY_TRUSTED
-
-# Sentry Auth Token
-.sentryclirc
 
 
 build/

@@ -12,6 +12,7 @@ async function bootstrap() {
       options: {
         package: protobufPackage,
         protoPath: join(process.cwd(), 'shared/proto/user.proto'),
+        url: '0.0.0.0:5000',
       },
     },
   );

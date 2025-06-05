@@ -7,7 +7,7 @@ import { HttpExceptionFilter } from 'src/common/filters/http-exception.filter';
 
 @ApiTags('users')
 @Controller('users')
-// @UseFilters(HttpExceptionFilter)
+@UseFilters(HttpExceptionFilter)
 export class UserController {
   constructor(private readonly userService: UserService) {}
 

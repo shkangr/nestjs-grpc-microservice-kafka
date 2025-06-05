@@ -1,7 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "api-gateway/src",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true
+  },
   "monorepo": true,
   "root": "api-gateway",
   "projects": {
@@ -21,6 +24,15 @@
       "sourceRoot": "grpc-user/src",
       "compilerOptions": {
         "tsConfigPath": "grpc-user/tsconfig.json"
+      }
+    },
+    "notification-service": {
+      "type": "application",
+      "root": "notification-service",
+      "entryFile": "main",
+      "sourceRoot": "notification-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "notification-service/tsconfig.json"
       }
     }
   }
